@@ -1,0 +1,1 @@
+Sample python program to connect to Teradata Vantage using `teradatasql` python database connector.
