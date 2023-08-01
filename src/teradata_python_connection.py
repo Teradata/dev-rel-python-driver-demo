@@ -1,6 +1,6 @@
 import teradatasql
 
-DB_URL = ""                                 #Add host
+DB_URL = ""                                 #Add Host
 USER = ""                                   #Add Username
 PASS = ""                                   #Add Password
 QUERY = "SELECT * FROM dbc.dbcinfo"         #Sample query
