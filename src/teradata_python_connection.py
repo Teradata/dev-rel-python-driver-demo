@@ -10,7 +10,7 @@ try:
         # Create a cursor to execute queries
         with con.cursor() as cur:
             try:
-                # Creating the table
+                # Creating the table SampleEmployee
                 cur.execute (f"CREATE SET TABLE {USER}.SampleEmployee \
                             (Associate_Id     INTEGER, \
                             Associate_Name   CHAR(25), \
@@ -24,9 +24,9 @@ try:
                 cur.execute (f"INSERT INTO {USER}.SampleEmployee VALUES (2, 'Jared Dunn','CFO')")
                 cur.execute (f"INSERT INTO {USER}.SampleEmployee VALUES (3, 'Jian Yang','Intern')")
 
-                print("Sample data added to table demo_user.SampleEmployee.")
+                print(f"Sample data added to table {USER}.SampleEmployee.")
 
-                # Execute the SELECT query to get the results from DBC.SampleEmployee table 
+                # Execute the SELECT query to get the results from SampleEmployee table 
                 cur.execute(f"SELECT * FROM {USER}.SampleEmployee")
 
                 # Extract data from the result set and print it
